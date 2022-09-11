@@ -1,0 +1,7 @@
+Little Piggy :: A Simple Dice Game
+Little Piggy is a very simple dice game for two players. 
+The game is played in a series of turns. The aim of the game is to be the first player to score 100 points.
+On your turn you may keep rolling the die, scoring points for each 2, 3, 4, 5 and 6 rolled. 
+After any roll you can decide to "bank" your score. This is added to your current score and ends your turn.
+However, if you roll a 1, then you score nothing for this turn and play passes to the next player.
+The winner is the first player to reach or exceed the target score – usually 100 points
