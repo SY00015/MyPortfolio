@@ -1,0 +1,3 @@
+﻿  StringAnalyser.cpp
+D:\Sarah Project Back up\TextAdventure\repos\StringAnalyser01\StringAnalyser01\StringAnalyser.cpp(78,6): warning C4101: 'count': unreferenced local variable
+  StringAnalyser01.vcxproj -> D:\Sarah Project Back up\TextAdventure\repos\StringAnalyser01\Debug\StringAnalyser01.exe
