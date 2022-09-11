@@ -1,0 +1,3 @@
+C:\Users\yeung\source\repos\Text Adventure\Debug\Text Adventure.exe
+C:\Users\yeung\source\repos\Text Adventure\Debug\Text Adventure.pdb
+D:\Sarah Project Back up\TextAdventure\repos\A3_YatYinSarahYeung\Text Adventure\Debug\Text Adventure.exe

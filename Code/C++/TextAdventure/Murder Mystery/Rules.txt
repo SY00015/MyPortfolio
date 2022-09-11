@@ -1,0 +1,24 @@
+
+It is then follow by the game rules: 
+ To WIN the game, you must: 
+	> Go and search different places
+	> Find the location of the crime scene
+	> Find and collect the bloodied murder weapon
+	> Accuse the murder
+
+ Type a letter and follow by a location or item or name to take action
+ [GO] location
+ [S]EARCH location
+ [U]SE item
+ [G]ET item
+ [D]ROP item
+ [E]XAMINE item
+ [Q]UESTION suspect
+ [A]CCUSE suspect
+ [O]pen inventory
+
+ Type words to get the below function:  
+ MAP: call the map of the game world
+ GATHER: gather the suspects and accuse the murder
+ QUIT: leave the game
+ HELP: you could call this page up 

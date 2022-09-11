@@ -1,0 +1,10 @@
+Rock
+Knife
+BaseballBat
+Dagger
+Dart
+Axe
+Spear
+Brick
+GlassBottle
+Sawg
