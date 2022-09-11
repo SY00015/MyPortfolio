@@ -1,5 +1,0 @@
-C:\Users\yeung\source\repos\LittlePiggy\Debug\LittlePiggy.exe
-C:\Users\yeung\source\repos\LittlePiggy\Debug\LittlePiggy.pdb
-C:\Users\yeung\source\repos\LittlePiggy2.0\Debug\LittlePiggy.exe
-C:\Users\yeung\source\repos\LittlePiggy2.0\Debug\LittlePiggy.pdb
-D:\Sarah Project Back up\TextAdventure\repos\LittlePiggy2.0\Debug\LittlePiggy.exe
