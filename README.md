@@ -20,8 +20,8 @@ This repository contains projects I completed for my academic, self learning, an
     - Using the <fstream> library
   
 - Unreal Project 
-  -Individual Project
-    -Survival Game (Adventure/Puzzle game) 
+  - Individual Project
+    - Survival Game (Adventure/Puzzle game) 
       - Interfaces for interacting with object (health recover object, traps, puzzle solving items) 
       - Raycast interactions
       - AI Controller, Behaviour Trees, NavMesh
