@@ -17,7 +17,7 @@ This repository contains projects I completed for my academic, self learning, an
     - Accessing individual characters within a string
     
   - Writing reading data (Reading data from and writing data to a text file) 
-    - Using the <fstream> library
+    - Using the fstream library
   
 - Unreal Project 
   - Individual Project
