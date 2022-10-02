@@ -1,1 +1,9 @@
-﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.Cpp.Platform.targets(67,5): error MSB8020: The build tools for v142 (Platform Toolset = 'v142') cannot be found. To build using the v142 build tools, please install v142 build tools.  Alternatively, you may upgrade to the current Visual Studio tools by selecting the Project menu or right-click the solution, and then selecting "Retarget solution".
+﻿  TextAdventure.cpp
+D:\Sarah Project Back up\Programming-Portfolio\Code\C++\TextAdventure\Murder Mystery\TextAdventure.cpp(163,12): warning C4834: discarding return value of function with 'nodiscard' attribute
+D:\Sarah Project Back up\Programming-Portfolio\Code\C++\TextAdventure\Murder Mystery\TextAdventure.cpp(345,9): warning C4834: discarding return value of function with 'nodiscard' attribute
+D:\Sarah Project Back up\Programming-Portfolio\Code\C++\TextAdventure\Murder Mystery\TextAdventure.cpp(346,9): warning C4834: discarding return value of function with 'nodiscard' attribute
+D:\Sarah Project Back up\Programming-Portfolio\Code\C++\TextAdventure\Murder Mystery\TextAdventure.cpp(492,8): warning C4834: discarding return value of function with 'nodiscard' attribute
+D:\Sarah Project Back up\Programming-Portfolio\Code\C++\TextAdventure\Murder Mystery\TextAdventure.cpp(493,8): warning C4834: discarding return value of function with 'nodiscard' attribute
+D:\Sarah Project Back up\Programming-Portfolio\Code\C++\TextAdventure\Murder Mystery\TextAdventure.cpp(499,8): warning C4834: discarding return value of function with 'nodiscard' attribute
+D:\Sarah Project Back up\Programming-Portfolio\Code\C++\TextAdventure\Murder Mystery\TextAdventure.cpp(500,8): warning C4834: discarding return value of function with 'nodiscard' attribute
+  Text Adventure.vcxproj -> D:\Sarah Project Back up\Programming-Portfolio\Code\C++\TextAdventure\Murder Mystery\x64\Debug\Text Adventure.exe

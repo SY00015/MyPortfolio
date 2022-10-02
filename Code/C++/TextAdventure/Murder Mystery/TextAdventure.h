@@ -28,12 +28,14 @@ void playGame();
 void gameOver();
 
 void addItems();
-
+void clearTextFile();
 
 void setLocations();
-void displaymap();
+void createMap();
+void displayMap();
 void setSuspects();
 bool checkGameOver();
+bool mapCreated;
 
 string mydata;
 string askForString(string question);

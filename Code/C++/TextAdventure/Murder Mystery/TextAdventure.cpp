@@ -7,7 +7,8 @@ Purpose: Application Class File
 
 
 int main(){
-	
+	mapCreated = false;
+	clearTextFile();
 	displayTitle();
     displayRules();
 	
@@ -19,8 +20,7 @@ int main(){
 	
 	addItems();
 	
-	displaymap();
-	
+	createMap();
 	
 	playGame();
 	gameOver();
@@ -72,7 +72,7 @@ void playGame() {
 		getline(cin, input2);
 		input2.erase(remove(input2.begin(), input2.end(), ' '), input2.end());
 		if (input == "MAP") {
-			displaymap();
+			displayMap();
 			playGame();
 		}
 		if (input == "GO") {
@@ -284,10 +284,17 @@ void playGame() {
 		else {
 			playGame();
 		}
-	}isGameOver = checkGameOver();
 	}
+	isGameOver = checkGameOver();
+	if (isGameOver) {
+		clearTextFile();
+		gameOver();
+		waitForPlayer();
+		exit(0);
+	}
+}
 
-	bool checkGameOver() {
+bool checkGameOver() {
 		if (y==3) {
 			return true;
 		}
@@ -298,7 +305,11 @@ void playGame() {
 	}
 
 void gameOver() {
-	cout << " Thanks for playing. See you. " << endl;
+	string line = "\n\t+---------+----------+----------+----------+";
+	cout << line << endl;
+	cout << "\n\tThanks for playing. See you. " << endl;
+	cout << line << endl;
+	cout << endl;
 
 }
 
@@ -353,31 +364,64 @@ void setPlayers() {
 
 }
 
-void displaymap() {
+void createMap() {
+
 	vector<string> map;
 	cout << " You are now at " << playerList[0].getLocation()<<endl;
 	for (int i = 0; i < 11; i++) {
 		map.push_back(Locations[i]);
 	}
 	random_shuffle(map.begin(), map.end());
+	ofstream fileToWrite("Map.txt", ios::app);
+	if (fileToWrite.is_open()) {
+		string line = "\n\t+---------+----------+----------+----------+";
+		string line2 = "\n\t|         |          |          |          |";
+		cout << line;
+		fileToWrite << line ;
+		cout << line2;
+		fileToWrite << line2;
+		cout << "\n\t| " << map[0] << "     " << map[1] << "     " << map[2] << "     " << map[3];
+		fileToWrite << "\n\t| " << map[0] << "     " << map[1] << "     " << map[2] << "     " << map[3] ;
+		cout << line2;
+		fileToWrite << line2 ;
+		cout << line;
+		fileToWrite << line ;
+		cout << line2;
+		fileToWrite << line2 ;
+		cout << "\n\t| " << map[4] << "     " << map[5] << "     " << map[6] << "     " << map[7];
+		fileToWrite << "\n\t| " << map[4] << "     " << map[5] << "     " << map[6] << "     " << map[7] ;
+		cout << line2;
+		fileToWrite << line2 ;
+
+		cout << line;
+		fileToWrite << line;
+		cout << line2;
+		fileToWrite << line2 ;
+		cout << "\n\t| " << map[8] << "     " << map[9] << "     " << map[10];
+		fileToWrite << "\n\t| " << map[8] << "     " << map[9] << "     " << map[10] ;
+		cout << line2;
+		fileToWrite << line2 ;
+		cout << line << endl;
+		fileToWrite << line ;
+		}
+		fileToWrite.close();
+
 	
-	string line = "\n\t+---------+----------+----------+----------+";
-	string line2 = "\n\t|         |          |          |          |";
-	cout << line;
-	cout << line2;
-	cout << "\n\t| " << map[0] << "     " << map[1] << "     " << map[2] << "     " << map[3];
-	cout << line2;
+}
 
-	cout << line;
-	cout << line2;
-	cout << "\n\t| " << map[4] << "     " << map[5] << "     " << map[6] << "     " << map[7];
-	cout << line2;
+void displayMap(){
 
-	cout << line;
-	cout << line2;
-	cout << "\n\t| " << map[8] << "     " << map[9] << "     " << map[10];
-	cout << line2;
-	cout << line << endl;
+		ifstream fileToRead("Map.txt");
+		if (fileToRead.is_open()) {
+			while (getline(fileToRead, mydata)) {
+				cout << mydata<<endl;
+			}
+		}
+		// remember to close the file
+		fileToRead.close();
+
+	
+
 }
 
 void addItems() {
@@ -415,6 +459,12 @@ void addItems() {
 		}
 	}
 	
+}
+void clearTextFile()
+{
+	std::ofstream ofs;
+	ofs.open("Map.txt", std::ofstream::out | std::ofstream::trunc);
+	ofs.close();
 }
 void setSuspects() {
 	ifstream fileToRead;
