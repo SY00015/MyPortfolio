@@ -35,6 +35,7 @@ void createMap();
 void displayMap();
 void setSuspects();
 bool checkGameOver();
+bool checkName(string name, string userInput);
 bool mapCreated;
 
 string mydata;

@@ -76,9 +76,11 @@ void playGame() {
 			playGame();
 		}
 		if (input == "GO") {
+			bool locationFound = false;
 			int x = 0;
 			for (int i = 0; i < 11; i++) {
 				if (Locations[i] == input2) {
+					locationFound = true;
 					playerList[0].updateLocation(Locations[i]);
 					cout << " You are now at the " << playerList[0].getLocation() << endl;
 					cout << " " << Attributes[i] << endl;
@@ -102,7 +104,8 @@ void playGame() {
 
 				}
 			}
-			if (x == 0) { cout << " You saw no one." << endl; }
+			if (locationFound == false ) { cout << " Location not found. " << endl; }
+			if (locationFound == true && x == 0) { cout << " You saw no one." << endl; }
 
 
 			playGame();
@@ -303,6 +306,11 @@ bool checkGameOver() {
 			return false;
 		}
 	}
+
+bool checkName(string name, string userInput)
+{
+	return false;
+}
 
 void gameOver() {
 	string line = "\n\t+---------+----------+----------+----------+";

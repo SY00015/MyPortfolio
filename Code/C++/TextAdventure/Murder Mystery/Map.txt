@@ -1,14 +1,14 @@
 
 	+---------+----------+----------+----------+
 	|         |          |          |          |
-	| Entry     StoreRoom     Bathroom     Porch
+	| Loung     Hall     Bathroom     Wardrobe
 	|         |          |          |          |
 	+---------+----------+----------+----------+
 	|         |          |          |          |
-	| Dining     Gallery     Bedroom     Pangola
+	| Study     Kitchen     Entry     Ensuite
 	|         |          |          |          |
 	+---------+----------+----------+----------+
 	|         |          |          |          |
-	| Loung     Ensuite     Pool
+	| Dining     Pantry     Bedroom
 	|         |          |          |          |
 	+---------+----------+----------+----------+
