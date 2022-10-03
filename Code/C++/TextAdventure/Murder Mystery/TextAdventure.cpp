@@ -79,7 +79,9 @@ void playGame() {
 			bool locationFound = false;
 			int x = 0;
 			for (int i = 0; i < 11; i++) {
-				if (Locations[i] == input2) {
+				//if (checkName(Locations[i], input2)) { cout << " Found Name"; }
+				//if (Locations[i] == input2)
+				if (checkName(Locations[i], input2)){
 					locationFound = true;
 					playerList[0].updateLocation(Locations[i]);
 					cout << " You are now at the " << playerList[0].getLocation() << endl;
@@ -308,8 +310,21 @@ bool checkGameOver() {
 	}
 
 bool checkName(string name, string userInput)
+	
 {
-	return false;
+	if (name.length() == userInput.length()) {
+		for (int i = 0; i < name.length(); i++) {
+			if (tolower(name[i]) != towlower(userInput[i])) {
+				return false;
+			}
+
+
+		}
+		return true;
+	}
+	else {
+		return false;
+	}
 }
 
 void gameOver() {
