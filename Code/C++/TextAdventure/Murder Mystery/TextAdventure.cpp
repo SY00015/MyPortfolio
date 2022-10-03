@@ -79,8 +79,6 @@ void playGame() {
 			bool locationFound = false;
 			int x = 0;
 			for (int i = 0; i < 11; i++) {
-				//if (checkName(Locations[i], input2)) { cout << " Found Name"; }
-				//if (Locations[i] == input2)
 				if (checkName(Locations[i], input2)){
 					locationFound = true;
 					playerList[0].updateLocation(Locations[i]);
@@ -106,17 +104,20 @@ void playGame() {
 
 				}
 			}
-			if (locationFound == false ) { cout << " Location not found. " << endl; }
+			if (locationFound == false ) { cout << " --Location Not Found-- " << endl; }
+			//invalid users' input
 			if (locationFound == true && x == 0) { cout << " You saw no one." << endl; }
 
 
 			playGame();
 		}
 		if (input == "SEARCH") {
+			bool locationFound = false;
 			int x = 0;
 			for (int i = 0; i < 11; i++) {
-				if (Locations[i] == input2) {
-
+				
+				if (checkName(Locations[i], input2)) {
+					locationFound = true;
 					cout << " You searched the " << Locations[i] << endl;
 
 					for (unsigned int index = 0; index < gameItems.size(); index++) {
@@ -126,16 +127,18 @@ void playGame() {
 						}
 					}
 				}
-			}if (x == 0) { cout << " You found nothing" << endl; }
-
+			}
+			if (x == 0 && locationFound==true) { cout << " You found nothing." << endl; }
+			//invalid users' input
+			if (x == 0 && locationFound == false) { cout << " --Location Not Found-- " << endl; }
 
 			playGame();
 		}
 		if (input == "E") {
-
+			bool ItemFound = false;
 			cout << " You exaimed the " << input2 << endl;
 			for (unsigned int index = 0; index < gameItems.size(); index++) {
-				if (gameItems[index]->getItemName() == input2) {
+				if (checkName(gameItems[index]->getItemName(), input2)) {
 					if (gameItems[index]->getTypeName() == "Weapon") {
 
 						cout << " You found bloodstains on the " << gameItems[index]->getItemName() << "." << endl;
@@ -143,8 +146,14 @@ void playGame() {
 					if (gameItems[index]->getTypeName() == "None") {
 						cout << " You found nothing." << endl;
 					}
+					ItemFound = true;
 				}
-			}playGame();
+				
+			}
+			if (ItemFound!=true){
+				cout << " --Item Not Found-- " << endl;
+			}
+			playGame();
 		}
 		if (input == "G") {
 			for (unsigned int index = 0; index < gameItems.size(); index++) {
@@ -309,9 +318,9 @@ bool checkGameOver() {
 		}
 	}
 
-bool checkName(string name, string userInput)
-	
+bool checkName(string name, string userInput)	
 {
+	//convert user inputs to lowercaseand allow the program to identify user input in both lowercaseand uppercase
 	if (name.length() == userInput.length()) {
 		for (int i = 0; i < name.length(); i++) {
 			if (tolower(name[i]) != towlower(userInput[i])) {

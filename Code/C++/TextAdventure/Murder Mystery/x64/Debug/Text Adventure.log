@@ -1,9 +1,9 @@
 ﻿  TextAdventure.cpp
-D:\Sarah Project Back up\Programming-Portfolio\Code\C++\TextAdventure\Murder Mystery\TextAdventure.cpp(168,12): warning C4834: discarding return value of function with 'nodiscard' attribute
-D:\Sarah Project Back up\Programming-Portfolio\Code\C++\TextAdventure\Murder Mystery\TextAdventure.cpp(368,9): warning C4834: discarding return value of function with 'nodiscard' attribute
-D:\Sarah Project Back up\Programming-Portfolio\Code\C++\TextAdventure\Murder Mystery\TextAdventure.cpp(369,9): warning C4834: discarding return value of function with 'nodiscard' attribute
-D:\Sarah Project Back up\Programming-Portfolio\Code\C++\TextAdventure\Murder Mystery\TextAdventure.cpp(515,8): warning C4834: discarding return value of function with 'nodiscard' attribute
-D:\Sarah Project Back up\Programming-Portfolio\Code\C++\TextAdventure\Murder Mystery\TextAdventure.cpp(516,8): warning C4834: discarding return value of function with 'nodiscard' attribute
-D:\Sarah Project Back up\Programming-Portfolio\Code\C++\TextAdventure\Murder Mystery\TextAdventure.cpp(522,8): warning C4834: discarding return value of function with 'nodiscard' attribute
-D:\Sarah Project Back up\Programming-Portfolio\Code\C++\TextAdventure\Murder Mystery\TextAdventure.cpp(523,8): warning C4834: discarding return value of function with 'nodiscard' attribute
+D:\Sarah Project Back up\Programming-Portfolio\Code\C++\TextAdventure\Murder Mystery\TextAdventure.cpp(177,12): warning C4834: discarding return value of function with 'nodiscard' attribute
+D:\Sarah Project Back up\Programming-Portfolio\Code\C++\TextAdventure\Murder Mystery\TextAdventure.cpp(377,9): warning C4834: discarding return value of function with 'nodiscard' attribute
+D:\Sarah Project Back up\Programming-Portfolio\Code\C++\TextAdventure\Murder Mystery\TextAdventure.cpp(378,9): warning C4834: discarding return value of function with 'nodiscard' attribute
+D:\Sarah Project Back up\Programming-Portfolio\Code\C++\TextAdventure\Murder Mystery\TextAdventure.cpp(524,8): warning C4834: discarding return value of function with 'nodiscard' attribute
+D:\Sarah Project Back up\Programming-Portfolio\Code\C++\TextAdventure\Murder Mystery\TextAdventure.cpp(525,8): warning C4834: discarding return value of function with 'nodiscard' attribute
+D:\Sarah Project Back up\Programming-Portfolio\Code\C++\TextAdventure\Murder Mystery\TextAdventure.cpp(531,8): warning C4834: discarding return value of function with 'nodiscard' attribute
+D:\Sarah Project Back up\Programming-Portfolio\Code\C++\TextAdventure\Murder Mystery\TextAdventure.cpp(532,8): warning C4834: discarding return value of function with 'nodiscard' attribute
   Text Adventure.vcxproj -> D:\Sarah Project Back up\Programming-Portfolio\Code\C++\TextAdventure\Murder Mystery\x64\Debug\Text Adventure.exe
