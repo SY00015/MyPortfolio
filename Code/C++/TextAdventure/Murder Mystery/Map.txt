@@ -1,14 +1,14 @@
 
 	+---------+----------+----------+----------+
 	|         |          |          |          |
-	| Entry     Bedroom     Loung     Bathroom
+	| Ensuite     Hall     Pantry     Bathroom
 	|         |          |          |          |
 	+---------+----------+----------+----------+
 	|         |          |          |          |
-	| Dining     Porch     Study     StoreRoom
+	| Wardrobe     Entry     Kitchen     Loung
 	|         |          |          |          |
 	+---------+----------+----------+----------+
 	|         |          |          |          |
-	| Wardrobe     Ensuite     Hall
+	| Study     Bedroom     Dining
 	|         |          |          |          |
 	+---------+----------+----------+----------+

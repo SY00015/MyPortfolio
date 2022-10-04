@@ -22,6 +22,7 @@ int main(){
 	
 	createMap();
 	
+	cout << " Type 'HELP' to see the command keys and rules to win" << endl;
 	playGame();
 	gameOver();
 	waitForPlayer();
@@ -44,13 +45,8 @@ void displayTitle() {
 
 void displayRules() {
 	system("CLS");
-	ifstream fileToRead("MurderMystery.txt");
-	while (getline(fileToRead, mydata)) {
-		cout << mydata << endl;
-	}
-	fileToRead.close();
+	ReadFromFile("MurderMystery.txt");
 	waitForPlayer();
-	
 }
 void waitForPlayer() {
 	cout << "\n ";
@@ -58,6 +54,7 @@ void waitForPlayer() {
 }
 void playGame() {
 	bool isGameOver = false;
+	
 	while (!isGameOver) {
 		string input;
 		string input2 = "";
@@ -67,6 +64,7 @@ void playGame() {
 		string input6 = "";
 		string input7;
 
+		
 		cout << " What do you want to do? ";
 		cin >> input, input2;
 		getline(cin, input2);
@@ -136,7 +134,7 @@ void playGame() {
 		}
 		if (input == "E") {
 			bool ItemFound = false;
-			cout << " You exaimed the " << input2 << endl;
+			cout << " You examined the " << input2 << endl;
 			for (unsigned int index = 0; index < gameItems.size(); index++) {
 				if (checkName(gameItems[index]->getItemName(), input2)) {
 					if (gameItems[index]->getTypeName() == "Weapon") {
@@ -277,13 +275,8 @@ void playGame() {
 			}
 		}
 		if (input == "HELP") {
-			ifstream fileToRead;
-			fileToRead.open("Rules.txt");
-			while (getline(fileToRead, mydata)) {
-				cout << mydata << endl;
-			}
-			fileToRead.close();
-			waitForPlayer();
+
+			ReadFromFile("Rules.txt");
 			playGame();
 		}
 
@@ -442,17 +435,8 @@ void createMap() {
 }
 
 void displayMap(){
+	ReadFromFile("Map.txt");
 
-		ifstream fileToRead("Map.txt");
-		if (fileToRead.is_open()) {
-			while (getline(fileToRead, mydata)) {
-				cout << mydata<<endl;
-			}
-		}
-		// remember to close the file
-		fileToRead.close();
-
-	
 
 }
 
@@ -548,6 +532,17 @@ void setSuspects() {
 	
 	int secretNum6 = rand() % 6;
 		randName.push_back(characters[secretNum6]);
+	
+}
+
+void ReadFromFile(string name)
+{
+	ifstream fileToRead;
+	fileToRead.open(name);
+	while (getline(fileToRead, mydata)) {
+		cout << mydata << endl;
+	}
+	fileToRead.close();
 	
 }
 

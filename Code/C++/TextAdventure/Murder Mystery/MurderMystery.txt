@@ -6,12 +6,11 @@
  suspects and find out the murder ... all before the killer can strike again!"
 
 
- It is then follow by the game rules: 
  To WIN the game, you must: 
 	> Go and search different places
 	> Find the location of the crime scene
 	> Find and collect the bloodied murder weapon
-	> Accuse the murder
+	> Gathered the suspects and Accuse the murder
 
  Type a letter and follow by a location or item or name to take action
  [GO] location
