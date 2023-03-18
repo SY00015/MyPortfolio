@@ -28,6 +28,7 @@ This repository contains projects I completed for my academic, self learning, an
       - Made and implemented Cel Shader to achieve a cartoon vibe in the environment, and made the 2D and 3D more harmonized. 
       - Created and mixed 4 music tracks created for the game (battle music, dungeon music, town music, and underwater town music)
       - Trailers:	[youtube.com](https://www.youtube.com/watch?v=KkoYJ_MuS0I)
+      - Download: https://drive.google.com/file/d/1BY1ttX8uwyAAdnzWhBPmQ8Pxpxp-t6NV/view
   - Individual Project
     - Survival Game (Adventure/Puzzle game) 
       - Interfaces for interacting with object (health recover object, traps, puzzle solving items) 
