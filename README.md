@@ -20,6 +20,14 @@ This repository contains projects I completed for my academic, self learning, an
     - Using the fstream library
   
 - Unreal Project 
+  - Group Project 
+    - The Fish Man Framed Me
+      (Worked as the 3d artist and sound designer)
+      - Created 3D art and level design 
+      - Created particle effects like flickering candles and water droplets are created to improve the atmosphere 
+      - Made and implemented Cel Shader to achieve a cartoon vibe in the environment, and made the 2D and 3D more harmonized. 
+      - Created and mixed 4 music tracks created for the game (battle music, dungeon music, town music, and underwater town music)
+      - Trailers:	[youtube.com](https://www.youtube.com/watch?v=KkoYJ_MuS0I)
   - Individual Project
     - Survival Game (Adventure/Puzzle game) 
       - Interfaces for interacting with object (health recover object, traps, puzzle solving items) 
