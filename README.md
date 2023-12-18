@@ -3,23 +3,26 @@ This repository contains projects I completed for my academic, self learning, an
 Portfolio website link: https://yeungsarah10.wixsite.com/myportfolio
 
 # Content
-- Code 
-  - Little Piggy 2.0 (a simple dice game for two players) 
+- Code
+  - Text Adventure
+    - Little Piggy 2.0 (a simple dice game for two players) 
       - Allow player's input 
       - Display game statistics to the player
       - Modilfied function to reduce the use of global variables
       
-  - Murder Mystery (interactive story that unfolds as the player progresses through it) 
-    - Use of pointers, objects and the heap
-    - Data read from text file
+    - Murder Mystery (interactive story that unfolds as the player progresses through it) 
+      - Use of pointers, objects and the heap
+      - Data read from text file
     
-  - String Analyser (get user input for analysis) 
-    - Using string functions 
-    - Accessing individual characters within a string
+    - String Analyser (get user input for analysis) 
+      - Using string functions 
+      - Accessing individual characters within a string
     
-  - Writing reading data (Reading data from and writing data to a text file) 
-    - Using the fstream library
-  
+    - Writing reading data (Reading data from and writing data to a text file) 
+      - Using the fstream library
+     
+  - Codility Exercise
+
 - Unreal Project 
   - Group Project 
     - The Fish Man Framed Me
