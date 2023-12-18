@@ -1,0 +1,5 @@
+﻿  Source.cpp
+D:\Sarah Project Back up\TextAdventure\repos\Practise\CodilityExercise\Exercise1-3\Exercise1-3\Source.cpp(112,17): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\Sarah Project Back up\TextAdventure\repos\Practise\CodilityExercise\Exercise1-3\Exercise1-3\Source.cpp(157,18): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+D:\Sarah Project Back up\TextAdventure\repos\Practise\CodilityExercise\Exercise1-3\Exercise1-3\Source.cpp(190): warning C4715: 'OddOccurrencesInArray': not all control paths return a value
+  Exercise1-3.vcxproj -> D:\Sarah Project Back up\TextAdventure\repos\Practise\CodilityExercise\Exercise1-3\x64\Debug\Exercise1-3.exe
